@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: banque-service
+
+  zipkin:
+    service:
+      name: banque-service
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      username: mngadmin
+      password: alae.2001
+      authSource: admin
+      database: banque
+
+
+server:
+  port: 7050
+
+
+banque:
+  params:
+    x: 11
+    y: 12
+

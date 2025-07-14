@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: customer-service
+
+  zipkin:
+    service:
+      name: customer-service
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      username: mngadmin
+      password: alae.2001
+      authSource: admin
+      database: customer
+
+
+server:
+  port: 7080
+
+
+customer:
+  params:
+    x: 5
+    y: 6

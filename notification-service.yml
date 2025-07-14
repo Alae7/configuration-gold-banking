@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: notification-service
+
+  zipkin:
+    service:
+      name: notification-service
+
+  kafka:
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      username: mngadmin
+      password: alae.2001
+      authSource: admin
+      database: notification
+
+
+server:
+  port: 7090
+
+
+notification:
+  params:
+    x: 3
+    y: 4

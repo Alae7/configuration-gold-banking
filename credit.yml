@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: credit
+
+  zipkin:
+    service:
+      name: credit
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/credit_db
+    username: postgres
+    password: alae.2001
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
+server:
+  port: 7070
+
+
+credit:
+  params:
+    x: 7
+    y: 8
+

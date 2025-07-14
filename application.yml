@@ -1,0 +1,36 @@
+spring:
+  cloud:
+    discovery:
+      enabled: true
+
+    config:
+      enabled: true
+
+    zipkin:
+      base-url: http://localhost:9411
+      enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  tracing:
+    sampling:
+      probability: 1.0  # Trace all requests
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: ${DISCOVERY_SERVICE_URL:http://localhost:8761/eureka}
+
+
+
+global:
+  params:
+    x: 1
+    y: 2

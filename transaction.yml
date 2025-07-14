@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: transaction
+
+  zipkin:
+    service:
+      name: transaction
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/transaction_db
+    username: postgres
+    password: alae.2001
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
+server:
+  port: 7030
+
+
+credit:
+  params:
+    x: 48
+    y: 100

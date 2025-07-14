@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: compte
+
+  zipkin:
+    service:
+      name: compte
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/compte_db
+    username: postgres
+    password: alae.2001
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
+server:
+  port: 7060
+
+compte:
+  params:
+    x: 9
+    y: 10
