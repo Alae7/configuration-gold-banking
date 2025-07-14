@@ -32,5 +32,5 @@ eureka:
 
 global:
   params:
-    x: 1
-    y: 2
+    p1: 1
+    p2: 2
