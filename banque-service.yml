@@ -8,12 +8,7 @@ spring:
 
   data:
     mongodb:
-      host: localhost
-      port: 27017
-      username: mngadmin
-      password: alae.2001
-      authSource: admin
-      database: banque
+      uri: mongodb://mngadmin:alae.2001@localhost:27017/gold-banking?authMechanism=SCRAM-SHA-1&authSource=admin
 
 
 server:
