@@ -10,7 +10,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/transaction
     username: postgres
-    password: alae.2001
+    password: admin.2001
 
 
   jpa:
